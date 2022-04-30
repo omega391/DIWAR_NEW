@@ -1,0 +1,1837 @@
+#navbar {
+  height: 110px;
+  width: 100%;
+  background-color: white;
+  z-index: 3;
+  position: fixed;
+  -webkit-box-shadow: 0px 0px 42px 0px #d6d6d6;
+          box-shadow: 0px 0px 42px 0px #d6d6d6;
+  padding: 0px 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#navbar .nav-container {
+  width: 100%;
+  max-width: 1500px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 60%;
+      grid-template-columns: 40% 60%;
+}
+
+#navbar .nav-container .logo img {
+  height: 50px;
+  width: auto;
+}
+
+#navbar .nav-container .navbarButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Montserrat Semibold";
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#navbar .nav-container .navbarButton a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #4c4a47;
+  text-align: center;
+  position: relative;
+}
+
+#navbar .nav-container .navbarButton a::before {
+  position: absolute;
+}
+
+#navbar .nav-container .navbarButton a:hover {
+  color: #e3b707;
+  letter-spacing: 1px;
+  -webkit-transition: ease 500ms letter-spacing;
+  transition: ease 500ms letter-spacing;
+}
+
+#navbar .nav-container .navbarButton a.active {
+  color: #083ccf;
+}
+
+#navbar .nav-container .navbarButton a.active:hover {
+  color: #e3b707;
+}
+
+#navbar .nav-container .navbarButton a:nth-child(4) {
+  padding: 8px 14px;
+  background-color: #4c4a47;
+  color: #e3b707;
+  border-radius: 50px;
+}
+
+#navbar .nav-container .navbarButton a:nth-child(4):hover {
+  background-color: #e3b707;
+  color: #4c4a47;
+  letter-spacing: 1px;
+  -webkit-transition: ease 500ms letter-spacing;
+  transition: ease 500ms letter-spacing;
+}
+
+#navbar .nav-container .navbarButton a:nth-child(4).active {
+  background-color: #083ccf;
+  color: white;
+  letter-spacing: 1px;
+  -webkit-transition: ease 500ms letter-spacing;
+  transition: ease 500ms letter-spacing;
+}
+
+/* Extra small devices (phones, 600px and down) */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+#homepage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  width: 100%;
+  position: relative;
+  padding-bottom: 200px;
+}
+
+#homepage .homepageContent {
+  padding: 170px 0px 150px 100px;
+}
+
+#homepage .homepageContent p:first-child {
+  font-family: "Bebas";
+  font-size: 110px;
+  letter-spacing: -2px;
+  width: 530px;
+  color: #083ccf;
+  line-height: 90px;
+}
+
+#homepage .homepageContent p:nth-child(2) {
+  padding-top: 10px;
+  font-family: "Montserrat SemiBold";
+  color: #e3b707;
+  font-size: 45px;
+  width: 600px;
+  line-height: 45px;
+}
+
+#homepage .homepageContent p:nth-child(3) {
+  padding-top: 10px;
+  font-family: "Montserrat SemiBold";
+  color: #4c4a47;
+  font-size: 16px;
+  width: 550px;
+  line-height: 23px;
+}
+
+#homepage .homepageContent #getstarted {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #4c4a47;
+  margin-top: 12px;
+  border: none;
+  outline: none;
+  padding: 10px 46px;
+  font-family: "Montserrat SemiBold";
+  color: #e3b707;
+  font-size: 22px;
+  border-radius: 28px;
+  cursor: pointer;
+}
+
+#homepage .homepageContent #getstarted span {
+  margin-left: 8px;
+  height: 28px;
+  width: 28px;
+  background-color: white;
+  border-radius: 100%;
+}
+
+#homepage .homepageContent #getstarted span i {
+  padding-top: 4px;
+}
+
+#homepage .homepageContent #getstarted:hover {
+  background-color: #e3b707;
+  color: #4c4a47;
+}
+
+#homepage .homepageContent #getstarted:hover span {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: -webkit-transform 0.8s ease-in-out;
+  transition: -webkit-transform 0.8s ease-in-out;
+  transition: transform 0.8s ease-in-out;
+  transition: transform 0.8s ease-in-out, -webkit-transform 0.8s ease-in-out;
+}
+
+#homepage .homepageContent #getstarted.active {
+  background-color: #083ccf;
+  color: white;
+}
+
+#homepage .homepageContent #getstarted.active span i {
+  color: #083ccf;
+}
+
+#homepage .homepageContent #noaccount {
+  font-family: "Montserrat";
+  color: #8b8b8b;
+  font-size: 12px;
+  margin: 8px 0px 0px 24px;
+  cursor: pointer;
+}
+
+#homepage .homepageContent #noaccount:hover {
+  color: #e3b707;
+}
+
+#homepage .homepageContent #noaccount:hover span {
+  font-family: "Montserrat SemiBold";
+}
+
+#homepage .homepageImage {
+  position: absolute;
+  right: 0;
+  z-index: -1;
+}
+
+#homepage .homepageImage img {
+  height: 750px;
+}
+
+#homepage .scrolldown {
+  margin-top: -60px;
+  width: 100%;
+}
+
+#homepage .scrolldown a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#homepage .scrolldown a .mouse {
+  height: 50px;
+  width: 30px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  background-color: #4c4a47;
+  margin-bottom: 3px;
+  padding-top: 15px;
+}
+
+#homepage .scrolldown a .mouse span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #e3b707;
+  display: block;
+  margin: auto;
+  -webkit-animation: move-wheel 1s linear infinite;
+          animation: move-wheel 1s linear infinite;
+}
+
+#homepage .scrolldown a .arrow {
+  margin-bottom: -2px;
+  padding-top: auto;
+}
+
+#homepage .scrolldown a .arrow span {
+  display: block;
+  width: 8px;
+  height: 8px;
+  border: 2px solid transparent;
+  border-right-color: #4c4a47;
+  border-bottom-color: #4c4a47;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  text-align: center;
+  -webkit-animation: arrow-down 0.5s alternate infinite;
+          animation: arrow-down 0.5s alternate infinite;
+}
+
+#homepage .scrolldown a .arrow1 {
+  margin-bottom: 5px;
+  padding-top: auto;
+}
+
+#homepage .scrolldown a .arrow1 span {
+  display: block;
+  width: 8px;
+  height: 8px;
+  border: 2px solid transparent;
+  border-right-color: #4c4a47;
+  border-bottom-color: #4c4a47;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  text-align: center;
+  -webkit-animation: arrow-down 0.7s alternate infinite;
+          animation: arrow-down 0.7s alternate infinite;
+}
+
+@-webkit-keyframes move-wheel {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-16px);
+            transform: translateY(-16px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(16px);
+            transform: translateY(16px);
+  }
+}
+
+@keyframes move-wheel {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-16px);
+            transform: translateY(-16px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(16px);
+            transform: translateY(16px);
+  }
+}
+
+@-webkit-keyframes arrow-down {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes arrow-down {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#homepage .footer {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../resources/image/waveheaderwhite.png");
+  height: 280px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+#howitworks {
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 130px 100px 280px 100px;
+}
+
+#howitworks .header p {
+  font-family: "Montserrat ExtraBold";
+  color: #4c4a47;
+  font-size: 64px;
+  margin-left: 16px;
+}
+
+#howitworks .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#howitworks .content .step:nth-child(even) {
+  margin-top: 80px;
+}
+
+#howitworks .content .step .stepnum {
+  font-family: "Montserrat Semibold";
+  color: #e3b707;
+  font-size: 24px;
+  margin-left: 22px;
+}
+
+#howitworks .content .step .stepnum span {
+  color: #083ccf;
+}
+
+#howitworks .content .step p:nth-child(2) {
+  color: #083ccf;
+  font-size: 16px;
+  font-family: "Montserrat SemiBold";
+  margin-left: 22px;
+}
+
+#howitworks .content .step .card {
+  width: auto;
+  height: auto;
+  background-color: white;
+  -webkit-box-shadow: 8px 8px 12px #cfcfcf, -8px -8px 12px #f0f0f0;
+          box-shadow: 8px 8px 12px #cfcfcf, -8px -8px 12px #f0f0f0;
+  margin: 16px 24px;
+  padding: 24px 28px;
+  background-color: white;
+  border-radius: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+
+#howitworks .content .step .card img {
+  height: 150px;
+  width: auto;
+}
+
+#howitworks .content .step .card p:nth-child(2) {
+  color: #8b8b8b;
+  margin-top: 8px;
+  text-align: center;
+  line-height: 22px;
+  font-size: 14px;
+  margin-left: 0px;
+  font-family: "Montserrat";
+}
+
+#howitworks .content .step .card .learnmore {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: -2px;
+  cursor: pointer;
+}
+
+#howitworks .content .step .card .learnmore:hover p {
+  color: #e3b707;
+  letter-spacing: 0.5px;
+  -webkit-transition: letter-spacing 0.5s ease;
+  transition: letter-spacing 0.5s ease;
+}
+
+#howitworks .content .step .card .learnmore:hover i {
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+  -webkit-transition: -webkit-transform ease-in-out 0.5s;
+  transition: -webkit-transform ease-in-out 0.5s;
+  transition: transform ease-in-out 0.5s;
+  transition: transform ease-in-out 0.5s, -webkit-transform ease-in-out 0.5s;
+  color: #e3b707;
+}
+
+#howitworks .content .step .card .learnmore p {
+  color: #8b8b8b;
+  text-align: right;
+  margin-top: 8px;
+  font-family: "Montserrat SemiBold";
+  font-size: 14px;
+}
+
+#howitworks .content .step .card .learnmore i {
+  font-size: 18px;
+  color: #8b8b8b;
+  padding-left: 6px;
+  margin-top: 10px;
+}
+
+#howitworks .btnstartsteps {
+  margin-top: 36px;
+  text-align: right;
+  margin-right: 24px;
+}
+
+#howitworks .btnstartsteps button {
+  padding: 10px 46px;
+  background-color: #4c4a47;
+  border-radius: 99px;
+  font-family: "Montserrat SemiBold";
+  color: #e3b707;
+  font-size: 22px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+#howitworks .btnstartsteps button i {
+  padding: 6px 0px 0px 6px;
+}
+
+#howitworks .btnstartsteps button:hover {
+  background-color: #e3b707;
+  color: #4c4a47;
+}
+
+#howitworks .btnstartsteps button:hover i {
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+  -webkit-transition: -webkit-transform ease-in-out 0.3s;
+  transition: -webkit-transform ease-in-out 0.3s;
+  transition: transform ease-in-out 0.3s;
+  transition: transform ease-in-out 0.3s, -webkit-transform ease-in-out 0.3s;
+}
+
+#howitworks .btnstartsteps button.active {
+  background-color: #083ccf;
+  color: white;
+}
+
+#contactus {
+  background-image: url("../resources/image/bgcontactpage.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  padding: 230px 100px 50px 100px;
+}
+
+#contactus .headertop {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../resources/image/waveheader.png");
+  height: 280px;
+  width: 100%;
+  position: absolute;
+  top: -280px;
+  left: 0;
+}
+
+#contactus .headercontactpage {
+  position: absolute;
+  margin-top: -100px;
+}
+
+#contactus .headercontactpage p {
+  font-family: "Montserrat ExtraBold";
+  color: #4c4a47;
+  font-size: 64px;
+  color: #e3b707;
+}
+
+#contactus .contactuscontent .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#contactus .contactuscontent .content .contactdetails {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+#contactus .contactuscontent .content .contactdetails {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#contactus .contactuscontent .content .contactdetails .text {
+  font-family: "Montserrat";
+}
+
+#contactus .contactuscontent .content .contactdetails .text p {
+  padding-top: 16px;
+  line-height: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+#contactus .contactuscontent .content .contactdetails .text p i {
+  font-size: 20px;
+  padding-right: 12px;
+}
+
+#contactus .contactuscontent .content .contactdetails .text p:hover {
+  color: #e3b707;
+}
+
+#contactus .contactuscontent .content .contactdetails .text p:nth-child(1) {
+  cursor: text;
+}
+
+#contactus .contactuscontent .content .contactdetails .text p:nth-child(1):hover {
+  color: white;
+}
+
+#contactus .contactuscontent .content .contactdetails .text p:nth-child(2) {
+  margin-top: 24px;
+}
+
+#contactus .contactuscontent .content .contactdetails .illustration img {
+  padding-right: 50px;
+}
+
+#contactus .contactuscontent .content .contactform {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-size: contain;
+  background: url("../resources/image/background.png");
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  padding: 36px 36px 44px 36px;
+  border-radius: 16px;
+}
+
+#contactus .contactuscontent .content .contactform p {
+  font-family: "Montserrat SemiBold";
+  font-size: 36px;
+  color: #e3b707;
+}
+
+#contactus .contactuscontent .content .contactform p:nth-child(2) {
+  font-family: "Montserrat Medium";
+  color: #4c4a47;
+  font-size: 15px;
+  width: 300px;
+  line-height: 25px;
+  margin-top: 8px;
+}
+
+#contactus .contactuscontent .content .contactform form {
+  display: -ms-grid;
+  display: grid;
+}
+
+#contactus .contactuscontent .content .contactform form input {
+  margin-top: 12px;
+  width: 300px;
+  height: 40px;
+  padding: 0px 14px;
+  font-family: "Montserrat Medium";
+  border: solid 1.5px #8b8b8b;
+  outline: none;
+  background-color: #eeeeee;
+  font-size: 12px;
+  border-radius: 8px;
+}
+
+#contactus .contactuscontent .content .contactform form textarea {
+  margin-top: 12px;
+  border: none;
+  outline: none;
+  background-color: #eeeeee;
+  border-radius: 8px;
+  padding: 14px;
+  font-family: "Montserrat Medium";
+  padding-top: 12px;
+  resize: none;
+  width: 300px;
+  font-size: 12px;
+  border: solid 1.5px #8b8b8b;
+}
+
+#contactus .contactuscontent .content .contactform form input:hover,
+#contactus .contactuscontent .content .contactform form textarea:hover {
+  border: solid 2px #e3b707;
+}
+
+#contactus .contactuscontent .content .contactform form input[type="button"] {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 200px;
+  border-radius: 99px;
+  font-family: "Montserrat Semibold";
+  color: #e3b707;
+  border: none;
+  background-color: #4c4a47;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+#contactus .contactuscontent .content .contactform form input[type="button"]:hover {
+  background-color: #e3b707;
+  color: #4c4a47;
+}
+
+#contactus .contactuscontent .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  width: 650px;
+  margin-top: -180px;
+}
+
+#contactus .contactuscontent .links .logoanddescription {
+  width: 280px;
+}
+
+#contactus .contactuscontent .links .logoanddescription img {
+  margin-left: -12px;
+  width: 250px;
+}
+
+#contactus .contactuscontent .links .logoanddescription p {
+  font-family: "Montserrat";
+  line-height: 25px;
+  color: white;
+  font-size: 12px;
+}
+
+#contactus .contactuscontent .links .navlinks ul {
+  list-style-type: none;
+}
+
+#contactus .contactuscontent .links .navlinks ul li {
+  font-family: "Montserrat";
+  line-height: 28px;
+  font-size: 12px;
+  color: white;
+}
+
+#contactus .contactuscontent .links .navlinks ul li a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#contactus .contactuscontent .links .navlinks ul li a:hover {
+  color: #e3b707;
+}
+
+#contactus .contactuscontent .links .navlinks ul li:nth-child(1) {
+  font-family: "Montserrat ExtraBold";
+  font-size: 24px;
+  margin-bottom: 6px;
+  margin-top: 22px;
+}
+
+#contactus .contactuscontent .links .contactlinks ul {
+  list-style-type: none;
+}
+
+#contactus .contactuscontent .links .contactlinks ul li {
+  font-family: "Montserrat";
+  line-height: 28px;
+  font-size: 12px;
+  color: white;
+  cursor: pointer;
+}
+
+#contactus .contactuscontent .links .contactlinks ul li:hover {
+  color: #e3b707;
+}
+
+#contactus .contactuscontent .links .contactlinks ul li:nth-child(1) {
+  font-family: "Montserrat ExtraBold";
+  font-size: 24px;
+  margin-bottom: 6px;
+  margin-top: 22px;
+}
+
+#contactus .contactuscontent .footer div {
+  margin-top: 90px;
+  width: 100%;
+  height: 6px;
+  border-radius: 99px;
+  background-color: #e3b707;
+}
+
+#contactus .contactuscontent .footer p {
+  text-align: right;
+  margin-top: 12px;
+  font-family: "Montserrat SemiBold";
+  font-size: 12px;
+  color: #e3b707;
+}
+
+#navbar {
+  height: 110px;
+  width: 100%;
+  background-color: white;
+  z-index: 3;
+  position: fixed;
+  -webkit-box-shadow: 0px 0px 42px 0px #d6d6d6;
+          box-shadow: 0px 0px 42px 0px #d6d6d6;
+  padding: 0px 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#navbar .logo img {
+  height: 50px;
+  width: auto;
+}
+
+#navbar .close {
+  border: none;
+  outline: none;
+  position: relative;
+  cursor: pointer;
+}
+
+#navbar .close::before, #navbar .close::after {
+  content: "";
+  position: absolute;
+  height: 8px;
+  width: 36px;
+  background-color: #4c4a47;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  right: 0;
+}
+
+#navbar .close::after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.signuplogincontents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.signuplogincontents #loginpage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 120px;
+}
+
+.signuplogincontents #loginpage .content {
+  border: 1px solid gray;
+  border-radius: 24px;
+  padding: 60px;
+}
+
+.signuplogincontents #loginpage .content .heading {
+  font-family: "Montserrat ExtraBold";
+  font-size: 46px;
+  color: #083ccf;
+}
+
+.signuplogincontents #loginpage .content .email {
+  margin-top: 16px;
+}
+
+.signuplogincontents #loginpage .content .email .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.signuplogincontents #loginpage .content .email .text p {
+  font-family: "Montserrat";
+  font-size: 14px;
+}
+
+.signuplogincontents #loginpage .content .email .text p button {
+  padding-left: 6px;
+  color: #083ccf;
+  font-family: "Montserrat Semibold";
+  cursor: pointer;
+  background: none;
+  outline: none;
+  border: none;
+}
+
+.signuplogincontents #loginpage .content .email .text p:nth-child(2) {
+  font-size: 12px;
+  padding-right: 4px;
+}
+
+.signuplogincontents #loginpage .content .email #email {
+  width: 100%;
+  outline: none;
+  height: 46px;
+  margin-top: 6px;
+  border-radius: 6px;
+  outline: none;
+  border: 2px solid gray;
+  padding-left: 8px;
+}
+
+.signuplogincontents #loginpage .content .email #email:hover {
+  border: solid 2px #e3b707;
+}
+
+.signuplogincontents #loginpage .content .password {
+  margin-top: 24px;
+}
+
+.signuplogincontents #loginpage .content .password .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.signuplogincontents #loginpage .content .password .text p {
+  font-family: "Montserrat";
+  font-size: 14px;
+}
+
+.signuplogincontents #loginpage .content .password .text .loginshowhide {
+  font-family: "Montserrat Semibold";
+  cursor: pointer;
+  font-size: 12px;
+  padding-right: 4px;
+  background: none;
+  border: none;
+}
+
+.signuplogincontents #loginpage .content .password .text .loginshowhide i {
+  padding-right: 6px;
+}
+
+.signuplogincontents #loginpage .content .password #password {
+  width: 100%;
+  outline: none;
+  height: 46px;
+  margin-top: 6px;
+  border-radius: 6px;
+  outline: none;
+  border: 2px solid gray;
+  padding-left: 8px;
+}
+
+.signuplogincontents #loginpage .content .password #password:hover {
+  border: solid 2px #e3b707;
+}
+
+.signuplogincontents #loginpage .content .validators {
+  display: -ms-grid;
+  display: grid;
+
+}
+
+.signuplogincontents #loginpage .content .validators p {
+  margin-top: -6px;
+}
+
+.signuplogincontents #loginpage .content .validators p span {
+  height: 10px;
+  width: 10px;
+  display: inline-block;
+  border-radius: 100%;
+  background-color: #e3b707;
+  margin-bottom: -1px;
+}
+
+.signuplogincontents #loginpage .content #login {
+  width: 100%;
+  font-family: "Montserrat ExtraBold";
+  border: none;
+  outline: none;
+  padding: 16px 0px;
+  background-color: #4c4a47;
+  color: #e3b707;
+  font-size: 18px;
+  border-radius: 99px;
+  margin-top: 24px;
+  cursor: pointer;
+}
+
+.signuplogincontents #loginpage .content #login:hover {
+  background-color: #e3b707;
+  color: #4c4a47;
+}
+
+.signuplogincontents #loginpage .content #login.active {
+  background-color: #083ccf;
+  color: white;
+}
+
+.signuplogincontents #loginpage .content .forgotpassword {
+  margin-top: 12px;
+  width: 400px;
+  line-height: 16px;
+  font-family: "Montserrat";
+  font-size: 12px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.signuplogincontents #loginpage .content .forgotpassword span {
+  font-family: "Montserrat Semibold";
+}
+
+.signuplogincontents #loginpage .content .forgotpassword:hover {
+  letter-spacing: 0.5px;
+  -webkit-transition: ease 500ms letter-spacing;
+  transition: ease 500ms letter-spacing;
+}
+
+.signuplogincontents #signuppage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 120px;
+}
+
+.signuplogincontents #signuppage .content {
+  border: 1px solid gray;
+  border-radius: 24px;
+  padding: 60px;
+}
+
+.signuplogincontents #signuppage .content .heading {
+  font-family: "Montserrat ExtraBold";
+  font-size: 46px;
+  color: #083ccf;
+}
+
+.signuplogincontents #signuppage .content .email {
+  margin-top: 16px;
+}
+
+.signuplogincontents #signuppage .content .email .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.signuplogincontents #signuppage .content .email .text p {
+  font-family: "Montserrat";
+  font-size: 14px;
+}
+
+.signuplogincontents #signuppage .content .email .text p button {
+  padding-left: 6px;
+  color: #083ccf;
+  font-family: "Montserrat Semibold";
+  cursor: pointer;
+  background: none;
+  outline: none;
+  border: none;
+}
+
+.signuplogincontents #signuppage .content .email .text p:nth-child(2) {
+  font-size: 12px;
+  padding-right: 4px;
+}
+
+.signuplogincontents #signuppage .content .email #email {
+  width: 100%;
+  outline: none;
+  height: 46px;
+  margin-top: 6px;
+  border-radius: 6px;
+  outline: none;
+  border: 2px solid gray;
+  padding-left: 8px;
+}
+
+.signuplogincontents #signuppage .content .email #email:hover {
+  border: solid 2px #e3b707;
+}
+
+.signuplogincontents #signuppage .content .password {
+  margin-top: 24px;
+}
+
+.signuplogincontents #signuppage .content .password .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.signuplogincontents #signuppage .content .password .text p {
+  font-family: "Montserrat";
+  font-size: 14px;
+}
+
+
+
+.signuplogincontents #signuppage .content .password .text .signupshowhide {
+  font-family: "Montserrat Semibold";
+  cursor: pointer;
+  font-size: 12px;
+  padding-right: 4px;
+  background: none;
+  border: none;
+}
+
+
+.signuplogincontents #signuppage .content .password .text .signupshowhide i {
+  padding-right: 6px;
+}
+.signuplogincontents #signuppage .content .password #signuppassword  {
+  width: 100%;
+  outline: none;
+  height: 46px;
+  margin-top: 6px;
+  border-radius: 6px;
+  outline: none;
+  border: 2px solid gray;
+  padding-left: 8px;
+}
+
+
+.signuplogincontents #signuppage .content .password #signuppassword:hover {
+  border: solid 2px #e3b707;
+}
+
+/* CSS for Confirm Textbox */
+.signuplogincontents #signuppage .content .password2 {
+  margin-top: 24px;
+}
+
+.signuplogincontents #signuppage .content .password2 .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.signuplogincontents #signuppage .content .password2 .text p {
+  font-family: "Montserrat";
+  font-size: 14px;
+}
+
+.signuplogincontents #signuppage .content .password2 .text .signupshowhide2 i {
+  padding-right: 6px;
+}
+
+.signuplogincontents #signuppage .content .password2 .text .signupshowhide2 {
+  font-family: "Montserrat Semibold";
+  cursor: pointer;
+  font-size: 12px;
+  padding-right: 4px;
+  background: none;
+  border: none;
+}
+
+.signuplogincontents #signuppage .content .password2 #signuppassword2  {
+  width: 100%;
+  outline: none;
+  height: 46px;
+  margin-top: 6px;
+  border-radius: 6px;
+  outline: none;
+  border: 2px solid gray;
+  padding-left: 8px;
+}
+
+.signuplogincontents #signuppage .content .password2 #signuppassword2:hover {
+  border: solid 2px #e3b707;
+}
+.signuplogincontents #signuppage .content .validators {
+  display: -ms-grid;
+  display: grid;
+
+}
+
+.signuplogincontents #signuppage .content .validators p {
+  margin-top: -6px;
+}
+
+.signuplogincontents #signuppage .content .validators p span {
+  height: 10px;
+  width: 10px;
+  display: inline-block;
+  border-radius: 100%;
+  background-color: #e3b707;
+  margin-bottom: -1px;
+}
+
+.signuplogincontents #signuppage .content #signup {
+  width: 100%;
+  font-family: "Montserrat ExtraBold";
+  border: none;
+  outline: none;
+  padding: 16px 0px;
+  background-color: #4c4a47;
+  color: #e3b707;
+  font-size: 18px;
+  border-radius: 99px;
+  margin-top: 24px;
+  cursor: pointer;
+}
+
+.signuplogincontents #signuppage .content #signup:hover {
+  background-color: #e3b707;
+  color: #4c4a47;
+}
+
+.signuplogincontents #signuppage .content #signup.active {
+  background-color: #083ccf;
+  color: white;
+}
+
+.signuplogincontents #signuppage .content .termsandconditions {
+  margin-top: 12px;
+  width: 400px;
+  line-height: 16px;
+  font-family: "Montserrat";
+  font-size: 12px;
+  text-align: center;
+}
+
+.signuplogincontents #signuppage .content .termsandconditions span {
+  font-family: "Montserrat Semibold";
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+.userPanel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: 100%;
+}
+
+.userPanel .leftsidePanel {
+  padding-top: 36px;
+  width: 300px;
+  height: 100%;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  text-align: left;
+}
+
+.userPanel .leftsidePanel .logo img {
+  width: 250px;
+}
+
+.userPanel .leftsidePanel .verticalMenu {
+  margin-top: 60px;
+  width: 100%;
+  height: 100%;
+}
+
+.userPanel .leftsidePanel .verticalMenu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  margin-right: 12px;
+}
+
+.userPanel .leftsidePanel .verticalMenu ul li.active {
+  background-color: #083ccf;
+}
+
+.userPanel .leftsidePanel .verticalMenu ul li.active i,
+.userPanel .leftsidePanel .verticalMenu ul li.active a {
+  color: #ffffff;
+}
+
+.userPanel .leftsidePanel .verticalMenu ul li {
+  margin-top: 12px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  height: 42px;
+  width: 280px;
+  text-align: left;
+  padding-left: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.userPanel .leftsidePanel .verticalMenu ul li:hover {
+  background-color: #083ccf;
+  -webkit-animation: slideLeft 2s forwards;
+          animation: slideLeft 2s forwards;
+}
+
+.userPanel .leftsidePanel .verticalMenu ul li:hover i,
+.userPanel .leftsidePanel .verticalMenu ul li:hover a {
+  color: #ffffff;
+}
+
+@-webkit-keyframes slideLeft {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+.userPanel .leftsidePanel .verticalMenu ul li i {
+  text-align: left;
+  width: 30px;
+}
+
+.userPanel .leftsidePanel .verticalMenu ul li a {
+  text-decoration: none;
+  font-family: "Montserrat SemiBold";
+  color: #3a3a3a;
+  margin-bottom: -3px;
+}
+
+.userPanel .dashboard-pages {
+  margin: 0;
+}
+
+.userPanel .dashboard-pages .mainPanel {
+  width: 100%;
+  height: 100%;
+  background: #a7a7a7;
+  text-align: center;
+  display: none;
+}
+
+.userPanel .dashboard-pages .mainPanel html,
+.userPanel .dashboard-pages .mainPanel body {
+  position: relative;
+  height: 100%;
+}
+
+.userPanel .dashboard-pages .mainPanel body {
+  background-color: #000;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+}
+
+.userPanel .dashboard-pages .mainPanel .swiper {
+  width: 100%;
+  height: 300px;
+}
+
+.userPanel .dashboard-pages .mainPanel .swiper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.userPanel .dashboard-pages .mainPanel .swiper .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 18px;
+  border-radius: 36px;
+}
+
+.userPanel .dashboard-pages .mainPanel .swiper .swiper-pagination {
+  margin-right: 18px;
+  padding: 6px;
+  border-radius: 18px;
+  background-color: gray;
+}
+
+.userPanel .dashboard-pages .mainPanel .swiper .swiper-pagination .swiper-pagination-bullet {
+  height: 12px;
+  width: 12px;
+}
+
+.userPanel .dashboard-pages .mainPanel .articles-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.userPanel .dashboard-pages .mainPanel .articles-container .annoucement-featured {
+  width: 60%;
+  height: auto;
+  margin-left: 18px;
+}
+
+.userPanel .dashboard-pages .mainPanel .articles-container .annoucement-featured .annoucement {
+  background-color: #d8d8d8;
+  padding: 18px 0px 18px 18px;
+  border-radius: 16px;
+}
+
+.userPanel .dashboard-pages .mainPanel .articles-container .annoucement-featured .annoucement h1 {
+  font-family: "Bebas Neue";
+  letter-spacing: 2px;
+  text-align: left;
+  color: #083ccf;
+}
+
+.userPanel .dashboard-pages .mainPanel .articles-container .annoucement-featured .annoucement .article {
+  margin: 24px 16px 16px 0px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 80%;
+      grid-template-columns: 20% 80%;
+  text-align: left;
+}
+
+.userPanel .dashboard-pages .mainPanel .articles-container .annoucement-featured .annoucement .article .photo img {
+  height: 80px;
+  border-radius: 8px;
+}
+
+.userPanel .dashboard-pages .mainPanel .articles-container .annoucement-featured .annoucement .article .article-content h2 {
+  font-size: 16px;
+  font-family: "Montserrat Semibold";
+  margin-bottom: 8px;
+}
+
+.userPanel .dashboard-pages .mainPanel .articles-container .annoucement-featured .annoucement .article .article-content p {
+  font-family: "Montserrat";
+  font-size: 12px;
+}
+
+.userPanel .dashboard-pages .mainPanel .articles-container .annoucement-featured .featured-post {
+  margin-top: 18px;
+  background-color: #d8d8d8;
+  padding: 18px 0px 18px 18px;
+  border-radius: 16px;
+}
+
+.userPanel .dashboard-pages .mainPanel .articles-container .annoucement-featured .featured-post h1 {
+  font-family: "Bebas Neue";
+  letter-spacing: 2px;
+  text-align: left;
+  color: #083ccf;
+}
+
+.userPanel .dashboard-pages .mainPanel .articles-container .news-updates {
+  width: 40%;
+  height: auto;
+  background-color: white;
+  background-color: #d8d8d8;
+  margin: 0px 18px 18px 18px;
+  border-radius: 16px;
+}
+
+.userPanel .dashboard-pages .mainPanel .articles-container .news-updates .news h1 {
+  font-family: "Bebas Neue";
+  letter-spacing: 2px;
+  text-align: left;
+  margin: 24px 0px 0px 18px;
+  color: #083ccf;
+}
+
+.userPanel .dashboard-pages .mainPanel .articles-container .news-updates .news .news-content {
+  margin: 24px 16px 16px 16px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 0.5fr 1.5fr;
+      grid-template-columns: 0.5fr 1.5fr;
+  text-align: left;
+}
+
+.userPanel .dashboard-pages .mainPanel .articles-container .news-updates .news .news-content .photo img {
+  height: 80px;
+  border-radius: 8px;
+}
+
+.userPanel .dashboard-pages .mainPanel .articles-container .news-updates .news .news-content .news-details h2 {
+  font-size: 16px;
+  font-family: "Montserrat Semibold";
+  margin-bottom: 8px;
+}
+
+.userPanel .dashboard-pages .mainPanel .articles-container .news-updates .news .news-content .news-details p {
+  font-family: "Montserrat";
+  font-size: 12px;
+}
+
+.userPanel .dashboard-pages .diwarform {
+  width: 100%;
+  height: 100vh;
+  background: #a7a7a7;
+}
+
+.userPanel .dashboard-pages .diwarform h1 {
+  padding: 56px 42px 0px 42px;
+  font-family: "Bebas Neue";
+  letter-spacing: 2px;
+  font-size: 42px;
+  line-height: 40px;
+}
+
+.userPanel .dashboard-pages .diwarform .form {
+  margin: 0px 42px 0px 42px;
+}
+
+.userPanel .dashboard-pages .diwarform .form form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  margin-top: 24px;
+}
+
+.userPanel .dashboard-pages .diwarform .form form span {
+  font-family: "Montserrat Medium";
+  margin-top: 18px;
+}
+
+.userPanel .dashboard-pages .diwarform .form form span textarea,
+.userPanel .dashboard-pages .diwarform .form form span input {
+  margin-top: 6px;
+  width: 420px;
+  height: 36px;
+  font-family: "Montserrat";
+  border-radius: 6px;
+  border: solid 1.5px black;
+  padding-left: 6px;
+}
+
+.userPanel .dashboard-pages .diwarform .form form span textarea:hover,
+.userPanel .dashboard-pages .diwarform .form form span input:hover {
+  border: solid 2px #e3b707;
+}
+
+.userPanel .dashboard-pages .diwarform .form form span textarea {
+  height: 120px;
+  resize: none;
+}
+
+.userPanel .dashboard-pages .diwarform .form form span:nth-child(2) input {
+  width: 195px;
+}
+
+.userPanel .dashboard-pages .diwarform .form form #btnsubmitdiwar {
+  margin-top: 12px;
+  width: 380px;
+  border-radius: 100px;
+  outline: none;
+  border: none;
+  background-color: #4c4a47;
+  font-family: "Montserrat ExtraBold";
+  color: #e3b707;
+  font-size: 18px;
+  padding: 10px 0px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+#homepage {
+  z-index: 1;
+  background-image: url("../resources/image/background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: auto;
+  width: auto;
+}
+/*# sourceMappingURL=main.css.map */

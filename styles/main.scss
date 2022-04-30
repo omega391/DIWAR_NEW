@@ -1,0 +1,47 @@
+// //import other style sheet
+// @import "./header";
+
+// //grouping repeated commmands
+// // you can also add parameter like a variable
+// @mixin flexCenter() {
+//   // styling here
+// }
+
+// //variables
+// $primaryBtn: rgb(218, 49, 49);
+
+// * {
+//   @include flexCenter();
+//   background-color: antiquewhite;
+// }
+@import "_navbar.scss";
+@import "_homepage.scss";
+@import "_howitworks.scss";
+@import "_contactus.scss";
+@import "_login.scss";
+@import "_userDashboard.scss";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+
+  scroll-behavior: smooth;
+}
+
+$primaryColor: rgb(8, 60, 207);
+$seconaryColodr: rgb(227, 183, 7);
+$textColorDark: rgb(76, 74, 71);
+
+@mixin backgroundStyling() {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#homepage {
+  z-index: 1;
+  background-image: url(../resources/image/background.png);
+  @include backgroundStyling();
+  height: auto;
+  width: auto;
+}

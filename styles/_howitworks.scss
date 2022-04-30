@@ -1,0 +1,147 @@
+@mixin flexbox() {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@mixin backgroundStyling() {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+$primaryColor: rgb(8, 60, 207);
+$secondaryColor: rgb(227, 183, 7);
+$textColorDark: rgb(76, 74, 71);
+$textColorLight: rgb(139, 139, 139);
+
+#howitworks {
+  // background-image: url(/resources/image/background.png);
+  background-color: white;
+  @include backgroundStyling();
+  padding: 130px 100px 280px 100px;
+
+  .header {
+    p {
+      font-family: "Montserrat ExtraBold";
+      color: $textColorDark;
+      font-size: 64px;
+      margin-left: 16px;
+    }
+  }
+
+  .content {
+    @include flexbox();
+
+    .step:nth-child(even) {
+      margin-top: 80px;
+    }
+    .step {
+      .stepnum {
+        font-family: "Montserrat Semibold";
+        color: $secondaryColor;
+        font-size: 24px;
+        margin-left: 22px;
+        span {
+          color: $primaryColor;
+        }
+      }
+      p:nth-child(2) {
+        color: $primaryColor;
+        font-size: 16px;
+        font-family: "Montserrat SemiBold";
+        margin-left: 22px;
+      }
+      .card {
+        width: auto;
+        height: auto;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 8px 8px 12px rgb(207, 207, 207),
+          -8px -8px 12px rgb(240, 240, 240);
+        margin: 16px 24px;
+        padding: 24px 28px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 24px;
+        @include flexbox();
+        flex-direction: column;
+        img {
+          height: 150px;
+          width: auto;
+        }
+        p:nth-child(2) {
+          color: $textColorLight;
+          margin-top: 8px;
+          text-align: center;
+          line-height: 22px;
+          font-size: 14px;
+          margin-left: 0px;
+          font-family: "Montserrat";
+        }
+        .learnmore {
+          @include flexbox();
+          margin-top: -2px;
+          cursor: pointer;
+          &:hover {
+            p {
+              color: $secondaryColor;
+              letter-spacing: 0.5px;
+              transition: letter-spacing 0.5s ease;
+            }
+            i {
+              transform: translateX(10px);
+              transition: transform ease-in-out 0.5s;
+              color: $secondaryColor;
+            }
+          }
+          p {
+            color: $textColorLight;
+            text-align: right;
+            margin-top: 8px;
+            font-family: "Montserrat SemiBold";
+            font-size: 14px;
+          }
+          i {
+            font-size: 18px;
+            color: $textColorLight;
+            padding-left: 6px;
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  .btnstartsteps {
+    margin-top: 36px;
+    text-align: right;
+    margin-right: 24px;
+
+    button {
+      padding: 10px 46px;
+      background-color: $textColorDark;
+      border-radius: 99px;
+      font-family: "Montserrat SemiBold";
+      color: $secondaryColor;
+      font-size: 22px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      i {
+        padding: 6px 0px 0px 6px;
+      }
+      &:hover {
+        background-color: $secondaryColor;
+        color: $textColorDark;
+        i {
+          transform: translateX(10px);
+          transition: transform ease-in-out 0.3s;
+        }
+      }
+      &.active {
+        background-color: $primaryColor;
+        color: white;
+      }
+    }
+  }
+}

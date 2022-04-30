@@ -1,0 +1,98 @@
+@mixin flexbox() {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+$primaryColor: rgb(8, 60, 207);
+$seconaryColodr: rgb(227, 183, 7);
+$textColorDark: rgb(76, 74, 71);
+
+#navbar {
+  height: 110px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  z-index: 3;
+  position: fixed;
+  box-shadow: 0px 0px 42px 0px rgb(214, 214, 214);
+  padding: 0px 100px;
+  @include flexbox();
+  .nav-container {
+    width: 100%;
+    max-width: 1500px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    .logo {
+      img {
+        height: 50px;
+        width: auto;
+      }
+    }
+    .navbarButton {
+      @include flexbox();
+      font-family: "Montserrat Semibold";
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      a {
+        cursor: pointer;
+        text-decoration: none;
+        color: $textColorDark;
+        text-align: center;
+        position: relative;
+        &::before {
+          position: absolute;
+        }
+        &:hover {
+          color: $seconaryColodr;
+          letter-spacing: 1px;
+          transition: ease 500ms letter-spacing;
+        }
+        &.active {
+          color: $primaryColor;
+          &:hover {
+            color: $seconaryColodr;
+          }
+        }
+      }
+      a:nth-child(4) {
+        padding: 8px 14px;
+        background-color: $textColorDark;
+        color: $seconaryColodr;
+        border-radius: 50px;
+        &:hover {
+          background-color: $seconaryColodr;
+          color: $textColorDark;
+          letter-spacing: 1px;
+          transition: ease 500ms letter-spacing;
+        }
+        &.active {
+          background-color: $primaryColor;
+          color: white;
+          letter-spacing: 1px;
+          transition: ease 500ms letter-spacing;
+        }
+      }
+    }
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+// @media only screen and (min-width: 1390px) {
+//   #navbar {
+//     width: 1450px;
+//     border: 1px solid pink;
+//   }
+// }
+/* Extra large devices (large laptops and desktops, 1200px and up) */
