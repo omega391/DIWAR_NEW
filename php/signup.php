@@ -54,7 +54,7 @@ $stmt->bind_param("sss",  $_POST["email"], $_POST["name"], $password_hash);
 //handle duplicate entry error
 if ($stmt->execute()) {
     //redirect user to page after successfull regisration
-    header("Location: ../views/signup-success.html");
+    header("Location: ../views/login.php");
     exit;
 
 } else {

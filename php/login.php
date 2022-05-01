@@ -1,6 +1,6 @@
 <?php
 $isInvalid = false;
-$password_hash = password_hash($_POST["password"], PASSWORD_DEFAULT); 
+
     if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
         $mysqli = require __DIR__ . "./database_conn.php";
@@ -19,7 +19,7 @@ $password_hash = password_hash($_POST["password"], PASSWORD_DEFAULT);
                 session_start();
                 $_SESSION["user_id"] = $user["id"];
 
-                header("Location: ../views/userDashboard.html");
+                header("Location: ../views/userDashboard.php");
                 exit;
 
             }

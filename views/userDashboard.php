@@ -35,6 +35,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
   <body>
+  <?php if (isset($user)): ?>
     <div class="userPanel">
       <!-- sidebar menu start -->
       <div class="leftsidePanel">
@@ -61,6 +62,9 @@
             </li>
             <li data-list="tab_5">
               <i class="fa-solid fa-info"></i> <a href="#home">Help</a>
+            </li>
+            <li data-list="tab_6">
+              <i class="fa-solid fa-info"></i> <a href="../php/logout.php">Logout</a>
             </li>
           </ul>
         </div>
@@ -231,36 +235,42 @@
         </div>
 
         <!-- diwar form -->
+
         <div class="diwarform page tab_3">
           <h1>
             Daily individual work accomplishment report for work from home
             scheme
           </h1>
           <div class="form">
-            <form action="">
-              <span>
+            <form action="../php/submission_form.php"method="post" nonvalidated>
+            
+            <input name="Name" value=<?= htmlspecialchars($user["name"]) ?> > <br>
+                <input name="Email" value=<?= htmlspecialchars($user["email"]) ?> > <br>
+                <input name="user_id" value=<?= htmlspecialchars($user["id"]) ?> > <br>
+  
+            <span>
                 <label for="date">Date :</label><br />
                 <input type="date" id="date" name="date" />
               </span>
               <span>
                 <label for="time">Time :</label><br />
-                <input type="time" id="time" name="time" /> <span>to </span>
-                <input type="time" id="time" name="time" />
+                <input type="time" id="time" name="time_from" /> <span>to </span>
+                <input type="time" id="time" name="time_to" />
               </span>
               <span>
                 <label for="targetoutput">Target output for the Day :</label
                 ><br />
-                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <textarea name="details" id="" cols="30" rows="10"></textarea>
               </span>
               <span>
                 <label for="outputcompleted">Output details completed :</label
                 ><br />
-                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <textarea name="output" id="" cols="30" rows="10"></textarea>
               </span>
               <span>
                 <label for="meansofverification">Means of verification :</label
                 ><br />
-                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <textarea name="verify" id="" cols="30" rows="10"></textarea>
               </span>
               <br />
               <input
@@ -274,7 +284,12 @@
         </div>
       </div>
     </div>
-
+    <a href="../php/logout.php">LOGOUT</a>
+        <?php else: ?>
+            <!--redirect to loginpage if no session -->
+            <p><a href = "../index.php"></a></p>
+            <?php header("Location: ../index.html"); ?>
+        <?php endif; ?>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="../js/main.js"></script>
   </body>

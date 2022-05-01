@@ -1,12 +1,12 @@
 <?php
     session_start(); 
 
-    if (isset($_SESSION["session_id"])) {
+    if (isset($_SESSION["user_id"])) {
 
         $mysqli = require "..\php\database_conn.php";
 
         $sql = "SELECT * FROM user
-                WHERE id = {$_SESSION["session_id"]}" ;
+                WHERE id = {$_SESSION["user_id"]}" ;
 
         $result = $mysqli->query($sql);
         $user = $result->fetch_assoc();
@@ -21,7 +21,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-    <body> 
+    <body>
         
         <?php if (isset($user)): ?>
             <h1>HOME!!!!</h1>
@@ -35,11 +35,15 @@
 
                 <input name="Name" value=<?= htmlspecialchars($user["name"]) ?> > <br>
                 <input name="Email" value=<?= htmlspecialchars($user["email"]) ?> > <br>
- 
+                <input name="user_id" value=<?= htmlspecialchars($user["id"]) ?> > <br>
+
+                
                 <label for="date">DATE:</label>
                 <input type="date" name="date" required><br>
                 <label for="time">TIME:</label>
-                <input type="time" name="time" required><br>
+                <input type="time" name="time_from" required><br>
+                <label for="time">TIME:</label>
+                <input type="time" name="time_to" required><br>
                 <label for="output">OUTPUT FOR THE DAY:</label>
                 <input type="text" name="output" required><br>
                 <label for="details">DETAILS OF THE OUTPUT:</label>
