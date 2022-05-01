@@ -13,7 +13,7 @@ if(!$stmt->prepare($sql)) {
     die("SQL error: ". $mysqli->error);
 }
 
-$stmt->bind_param("sssssss",  
+$stmt->bind_param("sssssss", 
         $_POST["Name"], 
         $_POST["Email"], 
         $_POST["date"], 

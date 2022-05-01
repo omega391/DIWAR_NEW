@@ -3,7 +3,7 @@
 
     if (isset($_SESSION["user_id"])) {
 
-        $mysqli = require __DIR__ . "/database_conn.php";
+        $mysqli = require "..\php\database_conn.php";
 
         $sql = "SELECT * FROM user
                 WHERE id = {$_SESSION["user_id"]}" ;
@@ -28,7 +28,7 @@
             
             
             <!-- SUBMISSION FORM -->
-            <form action="submission_form.php" method="post">
+            <form action="../php/submission_form.php" method="post">
                 <h3>Daily Individual Work Accomplishment Report</h3>
                 
                 <p>WELCOME!</p>

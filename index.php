@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -31,7 +30,7 @@
           <a href="#homepage" id="home">home</a>
           <a href="#howitworks" id="how">how it works?</a>
           <a href="#contactus" id="contact">contact us</a>
-          <a href="./html/login.php" id="login">login</a>
+          <a href="./views/login.php" id="login">login</a>
         </div>
       </div>
     </div>
@@ -77,7 +76,6 @@
       <div class="header">
         <p>how it works?</p>
       </div>
-
       <div class="content">
         <div class="step">
           <p class="stepnum">step <span>1</span></p>
@@ -104,7 +102,6 @@
             </div>
           </div>
         </div>
-
         <div class="step">
           <p class="stepnum">step <span>3</span></p>
           <p>fill out the form</p>
