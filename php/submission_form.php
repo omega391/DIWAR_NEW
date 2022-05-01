@@ -4,8 +4,8 @@
 $mysqli = require __DIR__ . "/database_conn.php";
 
 //insert new record
-$sql = "INSERT INTO record (name, email, date, time, output, details, verification)
-            VALUES (?, ?, ?, ?, ?, ?, ?)";
+$sql = "INSERT INTO record (name, email, date, time_from, time_to, output, details, verification)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
 
 $stmt = $mysqli->stmt_init();
 
@@ -13,11 +13,12 @@ if(!$stmt->prepare($sql)) {
     die("SQL error: ". $mysqli->error);
 }
 
-$stmt->bind_param("sssssss", 
+$stmt->bind_param("ssssssss", 
         $_POST["Name"], 
         $_POST["Email"], 
         $_POST["date"], 
-        $_POST["time"], 
+        $_POST["time_from"], 
+        $_POST["time_to"], 
         $_POST["output"], 
         $_POST["details"], 
         $_POST["verify"]

@@ -17,9 +17,10 @@ $isInvalid = false;
             if (password_verify($_POST["password"], $user["password_hash"])) {
  
                 session_start();
-                $_SESSION["user_id"] = $user["id"];
+                session_regenerate_id();
+                $_SESSION["session_id"] = $user["id"];
 
-                header("Location: ./userDashboard.html");
+                header("Location: ./acc_home.php");
                 exit;
 
             }
