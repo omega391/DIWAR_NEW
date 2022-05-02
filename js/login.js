@@ -18,11 +18,7 @@ $("#login").click(function () {
 });
 
 //go to sign up
-$("#signuppage").hide();
-$("#gotosignup").click(function () {
-  $("#signuppage").show();
-  $("#loginpage").hide();
-});
+
 
 //   -----------------------///
 //sign up
