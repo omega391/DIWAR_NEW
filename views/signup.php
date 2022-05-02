@@ -81,6 +81,6 @@
       </div>
     </form>
      <!-- JS Transition of Login/Signup -->
-    <!-- <Script Src="../js/login.js"></script> -->
+    <Script Src="../js/login.js"></script>
   </body>
 </html>

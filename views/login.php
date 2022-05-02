@@ -107,6 +107,6 @@ $isInvalid = false;
 
   </form>
   <!-- JS Transition of Login/Signup -->
-    <!-- <script src="../js/login.js"></script> -->
+    <script src="../js/login.js"></script>
   </body>
 </html>
