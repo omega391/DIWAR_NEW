@@ -1,31 +1,3 @@
-<?php
-$isInvalid = false;
-       
-    if (($_SERVER["REQUEST_METHOD"] === "POST")) {
-
-        $mysqli = require "..\php\database_conn.php";
-
-        $sql = sprintf("SELECT * FROM user WHERE email = '%s'",
-                        $mysqli->real_escape_string($_POST["email"]));
-
-        $_result = $mysqli->query($sql);
-
-        $user= $_result->fetch_assoc();
-     
-        // check email password auth
-        if ($user) {
-            if (password_verify($_POST["password"], $user["password_hash"])) {       
-
-                session_start();
-                $_SESSION["user_id"] = $user["id"]; 
-                header("Location: ./userDashboard.php"); 
-                exit;
-            }
-        }
-             $isInvalid = true;
-    }
-?>
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -65,7 +37,7 @@ $isInvalid = false;
               <div class="text">
                 <p>Email</p>
                 <p>
-                  Already have an account? <a type="link" id="gotologin">log in</a>
+                  Already have an account? <a href="./login.php">log in</a>
                 </p>
               </div>
               <input type="email" name="email" id="email" placeholder="Email Address" />
