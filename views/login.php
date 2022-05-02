@@ -77,7 +77,7 @@ $isInvalid = false;
           <div class="email">
             <div class="text">
               <p>Email</p>
-              <p>Need an account? <a type="link" id="gotosignup">sign up</a></p>
+              <p>Need an account? <a href="./signup.php">sign up</a></p>
             </div>
             <input value="<?= htmlspecialchars($_POST["email"] ?? "") ?>" type="textbox" name="email" id="email" />
           </div>
