@@ -65,60 +65,10 @@ $isInvalid = false;
       </div>
       <a href="../index.html"><button class="close"></button></a>
     </div>
-    <!-- Navbar end -->
+
+    <!-- Navbar end -->F
     <div class="signuplogincontents">
-      <!-- sign up section -->
-      <form action="../php/signup.php" method="post" novalidate>
-      <div id="signuppage">
-        <div class="content">
-          <p class="heading">Sign up</p>
-            <div class="email">
-              <div class="text">
-                <p>Email</p>
-                <p>
-                  Already have an account? <a type="link" id="gotologin">log in</a>
-                </p>
-              </div>
-              <input type="email" name="email" id="email" placeholder="Email Address" />
-            </div>
-            <div class="email">
-              <div class="text">
-                <p>Name</p>
-                <br>  
-              </div>
-              <input type="text"  id="email" name="name" required placeholder="Name"/>           
-            </div>
-          <div class="password">
-            <div class="text">
-              <p>Password</p>
-              <button type="button" class="signupshowhide">
-                <!-- <i class="fa-solid fa-eye"></i>Show -->
-                Show
-              </button>
-            </div>
-            <input type="password" name="password" id="signuppassword" placeholder="Enter Password" />
-          </div>
-          <div class="password2">
-          <div class="text">
-              <p>Confirm Password</p>
-              <button type="button" class="signupshowhide2">
-                <!-- <i class="fa-solid fa-eye"></i>Show -->
-                Show
-              </button> 
-            </div>
-            <div class="pasword2">
-            <input type="password" name="confirm_password" id="signuppassword2" placeholder="Confirm Password"/>
-            </div>
-          </div>
-          <input type="submit" name="signup" id="signup" value="Sign up" />
-          <p class="termsandconditions">
-            By clicking the "Sign up" button, you are creating an account, and
-            agree to DIWAR <span>Terms of Service</span> and
-            <span>Privacy Policy.</span>
-          </p>
-        </div>
-      </div>
-    </form>
+
       <!-- log in section -->
       <form method="post" novalidate>
       <div id="loginpage">
@@ -155,10 +105,7 @@ $isInvalid = false;
         </div>
       </div>
 
-
-
   </form>
-
   <!-- JS Transition of Login/Signup -->
     <script src="../js/login.js"></script>
   </body>
