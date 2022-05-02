@@ -1,5 +1,3 @@
-<!-- Test Comment -->
-
 <?php
 $isInvalid = false;
        
